@@ -1,0 +1,35 @@
+/* ============================================================
+   base.css — reset + base typography, shared by every page
+   ============================================================ */
+
+*{ box-sizing:border-box; }
+html{ scroll-behavior:smooth; }
+body{
+  margin:0;
+  background:var(--cream-100);
+  color:var(--ink-900);
+  font-family:'Manchette', sans-serif;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+.display{ font-family:'Manchette', sans-serif; }
+
+/* Bilingual visibility toggle — driven by html[data-lang] set in main.js */
+html[data-lang="ar"] .t-en{ display:none; }
+html[data-lang="en"] .t-ar{ display:none; }
+
+img,svg{ display:block; max-width:100%; }
+a{ color:inherit; text-decoration:none; }
+ul{ margin:0; padding:0; list-style:none; }
+
+section{ padding-block:clamp(3.5rem,7vw,6.5rem); }
+.wrap{
+  width:100%;
+  max-width:1180px;
+  margin-inline:auto;
+  padding-inline:clamp(1.25rem,4vw,2.5rem);
+}
+
+@media (prefers-reduced-motion:reduce){
+  *{ animation:none !important; transition:none !important; }
+}

@@ -1,0 +1,37 @@
+/* ============================================================
+   tokens.css — Awalim design tokens (single source of truth)
+   Colors extracted directly from the real logo file and the
+   booklet cover — see DESIGN-SYSTEM.md for provenance & contrast checks.
+   Do not hardcode hex values anywhere else — always var(--...).
+   ============================================================ */
+
+:root{
+  /* Teal — primary brand color */
+  --teal-900:#153B3A;   /* deep backgrounds: hero, footer */
+  --teal-700:#266C6A;   /* primary buttons/links — real cover teal */
+  --teal-600:#2D7F7D;   /* hover state */
+
+  /* Gold — accent / CTA */
+  --gold-500:#FBD048;   /* real, sampled from logo */
+  --gold-600:#FAC009;   /* hover state */
+
+  /* Sage — secondary accent */
+  --sage-400:#D9DD55;   /* real, sampled from logo */
+  --sage-600:#A9AD23;   /* darker, for text-on-light use */
+
+  /* Cream — background */
+  --cream-050:#FFFFFF;
+  --cream-100:#FBF7EE;
+
+  /* Ink — text (real, sampled from the logo wordmark) */
+  --ink-900:#12493E;    /* primary text */
+  --ink-700:#4A7368;    /* secondary text */
+  --ink-400:#749288;    /* muted / decorative text only */
+
+  /* Shape & motion */
+  --radius-lg:24px;
+  --radius-md:18px;
+  --radius-sm:12px;
+  --shadow-soft:0 18px 40px -20px rgba(10,59,54,.35);
+  --ease:cubic-bezier(.22,.9,.35,1);
+}

@@ -1,0 +1,23 @@
+/* Manchette — Awalim's official brand typeface (Arabic + Latin, single family) */
+
+@font-face{
+  font-family:'Manchette';
+  src:url('Manchette-Thin.woff2') format('woff2');
+  font-weight:100;
+  font-style:normal;
+  font-display:swap;
+}
+@font-face{
+  font-family:'Manchette';
+  src:url('Manchette-Regular.woff2') format('woff2');
+  font-weight:400;
+  font-style:normal;
+  font-display:swap;
+}
+@font-face{
+  font-family:'Manchette';
+  src:url('Manchette-Bold.woff2') format('woff2');
+  font-weight:700;
+  font-style:normal;
+  font-display:swap;
+}

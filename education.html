@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تعليم · Education — عوالم · Awalim</title>
+<link rel="icon" type="image/png" sizes="32x32" href="assets/logo/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/logo/favicon/favicon-192.png">
+<link rel="apple-touch-icon" href="assets/logo/favicon/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/fonts/manchette/manchette-fonts.css">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/field.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <div class="logo">
+      <a href="index.html">
+        <img class="logo-mark" src="assets/logo/awalim-logo-full.png" alt="مؤسسة عوالم · Awalim Institution">
+      </a>
+    </div>
+    <nav class="nav-links">
+      <div class="nav-item">
+        <a class="nav-plain-link" href="index.html#about">
+          <span class="t-ar">عن عوالم</span><span class="t-en">About</span>
+        </a>
+      </div>
+      <div class="nav-item">
+        <button class="nav-trigger" data-menu="education" aria-expanded="false">
+          <span class="t-ar">تعليم</span><span class="t-en">Education</span>
+          <span class="chevron" aria-hidden="true"></span>
+        </button>
+      </div>
+      <div class="nav-item">
+        <button class="nav-trigger" data-menu="writing" aria-expanded="false">
+          <span class="t-ar">كتابة</span><span class="t-en">Writing</span>
+          <span class="chevron" aria-hidden="true"></span>
+        </button>
+      </div>
+      <div class="nav-item">
+        <button class="nav-trigger" data-menu="media" aria-expanded="false">
+          <span class="t-ar">إعلام</span><span class="t-en">Media</span>
+          <span class="chevron" aria-hidden="true"></span>
+        </button>
+      </div>
+      <div class="nav-item">
+        <button class="nav-trigger" data-menu="consulting" aria-expanded="false">
+          <span class="t-ar">مشورة</span><span class="t-en">Consulting</span>
+          <span class="chevron" aria-hidden="true"></span>
+        </button>
+      </div>
+    </nav>
+    <div class="nav-actions">
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+        <span class="t-ar">EN</span><span class="t-en">AR</span>
+      </button>
+      <a class="nav-cta bubble" href="index.html#footer">
+        <span class="t-ar">تواصل معنا</span><span class="t-en">Contact</span>
+      </a>
+      <button class="nav-burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+
+  <div class="mega-menu" id="menu-education" hidden>
+    <div class="wrap mega-tree">
+      <a class="mega-root bubble" href="#top"><span class="t-ar">تعليم</span><span class="t-en">Education</span></a>
+      <div class="mega-trunk"></div>
+      <div class="mega-branches">
+        <a class="mega-branch" href="#faith"><span class="t-ar">إيماني</span><span class="t-en">Faith</span></a>
+        <a class="mega-branch" href="#cultural"><span class="t-ar">ثقافي</span><span class="t-en">Cultural</span></a>
+        <a class="mega-branch" href="#scientific"><span class="t-ar">علمي</span><span class="t-en">Scientific</span></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="mega-menu" id="menu-writing" hidden>
+    <div class="wrap mega-tree">
+      <a class="mega-root bubble" href="writing.html"><span class="t-ar">كتابة</span><span class="t-en">Writing</span></a>
+      <div class="mega-trunk"></div>
+      <div class="mega-branches">
+        <a class="mega-branch" href="writing.html#faith"><span class="t-ar">إيماني</span><span class="t-en">Faith</span></a>
+        <a class="mega-branch" href="writing.html#cultural"><span class="t-ar">ثقافي</span><span class="t-en">Cultural</span></a>
+        <a class="mega-branch" href="writing.html#scientific"><span class="t-ar">علمي</span><span class="t-en">Scientific</span></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="mega-menu" id="menu-media" hidden>
+    <div class="wrap mega-tree">
+      <a class="mega-root bubble" href="media.html"><span class="t-ar">إعلام</span><span class="t-en">Media</span></a>
+      <div class="mega-trunk"></div>
+      <div class="mega-branches">
+        <a class="mega-branch" href="media.html#faith"><span class="t-ar">إيماني</span><span class="t-en">Faith</span></a>
+        <a class="mega-branch" href="media.html#cultural"><span class="t-ar">ثقافي</span><span class="t-en">Cultural</span></a>
+        <a class="mega-branch" href="media.html#scientific"><span class="t-ar">علمي</span><span class="t-en">Scientific</span></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="mega-menu" id="menu-consulting" hidden>
+    <div class="wrap mega-tree">
+      <a class="mega-root bubble" href="consulting.html"><span class="t-ar">مشورة</span><span class="t-en">Consulting</span></a>
+      <div class="mega-trunk"></div>
+      <div class="mega-branches">
+        <a class="mega-branch" href="consulting.html#faith"><span class="t-ar">إيماني</span><span class="t-en">Faith</span></a>
+        <a class="mega-branch" href="consulting.html#cultural"><span class="t-ar">ثقافي</span><span class="t-en">Cultural</span></a>
+        <a class="mega-branch" href="consulting.html#scientific"><span class="t-ar">علمي</span><span class="t-en">Scientific</span></a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="page-intro" id="top">
+  <div class="wrap">
+    <span class="eyebrow bubble hero-eyebrow">
+      <span class="t-ar">مجالات عملنا</span><span class="t-en">Our Fields of Work</span>
+    </span>
+    <h1 class="display">
+      <span class="t-ar">تعليم</span><span class="t-en">Education</span>
+    </h1>
+    <p>
+      <span class="t-ar">ثَمَّ أفنانٌ شتّى في إطار التعليم عندنا؛ فهناك دورات فكرية حضورية وافتراضية، وهناك برامج تعليمية ممتدة كصيف عوالم وفانوسها.</span>
+      <span class="t-en">Our education takes many forms — in-person and virtual intellectual courses, plus extended programs like Awalim Summer and Fanoosha.</span>
+    </p>
+  </div>
+</section>
+
+<section class="field-categories">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow bubble"><span class="t-ar">جوانب هذا المجال</span><span class="t-en">Dimensions of This Field</span></span>
+      <h2 class="display"><span class="t-ar">ثلاثة جوانب متكاملة</span><span class="t-en">Three Complementary Dimensions</span></h2>
+      <p><span class="t-ar">سيُفصَّل كل جانب أكثر مستقبلًا بمحتوى مستقل خاص به.</span><span class="t-en">Each dimension will be further detailed in the future with its own dedicated content.</span></p>
+    </div>
+    <div class="field-categories-grid">
+      <div class="field-category-card" id="faith">
+        <span class="badge">إ</span>
+        <h3><span class="t-ar">إيماني</span><span class="t-en">Faith</span></h3>
+        <p>
+          <span class="t-ar">محتوى يعزز الجانب الإيماني والعقدي ضمن التعليم.</span>
+          <span class="t-en">Content strengthening the faith and creedal dimension within Education.</span>
+        </p>
+        <span class="soon"><span class="t-ar">المحتوى التفصيلي قريبًا</span><span class="t-en">Detailed content coming soon</span></span>
+      </div>
+      <div class="field-category-card" id="cultural">
+        <span class="badge">ث</span>
+        <h3><span class="t-ar">ثقافي</span><span class="t-en">Cultural</span></h3>
+        <p>
+          <span class="t-ar">محتوى يفتح آفاقًا ثقافية وأدبية ضمن التعليم.</span>
+          <span class="t-en">Content opening cultural and literary horizons within Education.</span>
+        </p>
+        <span class="soon"><span class="t-ar">المحتوى التفصيلي قريبًا</span><span class="t-en">Detailed content coming soon</span></span>
+      </div>
+      <div class="field-category-card" id="scientific">
+        <span class="badge">ع</span>
+        <h3><span class="t-ar">علمي</span><span class="t-en">Scientific</span></h3>
+        <p>
+          <span class="t-ar">محتوى علمي ومعرفي رصين ضمن التعليم.</span>
+          <span class="t-en">Rigorous scientific and academic content within Education.</span>
+        </p>
+        <span class="soon"><span class="t-ar">المحتوى التفصيلي قريبًا</span><span class="t-en">Detailed content coming soon</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer-cta" id="footer">
+  <div class="wrap">
+    <p class="tag">#نفكر_معا</p>
+    <p><span class="t-ar">تابعوا عوالم وكونوا جزءًا من الحوار</span><span class="t-en">Follow Awalim and be part of the conversation</span></p>
+    <div class="footer-contact">
+      <a href="tel:+96899801406">+968 9980 1406</a>
+      <a href="mailto:awalimPlatform@gmail.com">awalimPlatform@gmail.com</a>
+    </div>
+    <div class="footer-social">
+      <a href="https://youtube.com/@awalim3227" target="_blank" rel="noopener noreferrer" aria-label="YouTube">YT</a>
+      <a href="https://www.instagram.com/_awalim" target="_blank" rel="noopener noreferrer" aria-label="Instagram">IG</a>
+      <a href="https://x.com/_awalim" target="_blank" rel="noopener noreferrer" aria-label="X">X</a>
+    </div>
+    <p class="footer-fine">
+      <span class="t-ar">© مؤسسة عوالم — جميع الحقوق محفوظة</span>
+      <span class="t-en">© Institution Awalim — All rights reserved</span>
+    </p>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+
+</body>
+</html>

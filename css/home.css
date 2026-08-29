@@ -1,0 +1,106 @@
+/* ============================================================
+   home.css — layout specific to index.html only
+   (shared nav/bubble/eyebrow/button/footer styles live in components.css)
+   ============================================================ */
+
+/* ---------- Hero ---------- */
+.hero{
+  position:relative;
+  background:radial-gradient(120% 140% at 15% 0%, var(--teal-600), var(--teal-900) 75%);
+  color:#fff;
+  padding-block:clamp(4.5rem,10vw,7.5rem) clamp(6rem,12vw,9rem);
+  overflow:hidden;
+}
+.hero-blob{
+  position:absolute; border-radius:50% 50% 48% 52% / 55% 45% 55% 45%;
+  filter:blur(2px); opacity:.85; z-index:0;
+}
+.hero-blob.gold{ width:230px; height:230px; background:var(--gold-500); inset-inline-end:-60px; top:8%; animation:float 9s ease-in-out infinite; }
+.hero-blob.sage{ width:170px; height:170px; background:var(--sage-400); inset-inline-start:-40px; bottom:2%; animation:float 11s ease-in-out infinite reverse; }
+@keyframes float{ 0%,100%{ transform:translateY(0) rotate(0deg);} 50%{ transform:translateY(-22px) rotate(6deg);} }
+
+.hero .wrap{ position:relative; z-index:1; }
+.hero-eyebrow{ background:rgba(255,255,255,.12); color:#EFE3B8; border:1px solid rgba(255,255,255,.25); }
+.hero-eyebrow::after{ display:none; }
+.hero h1{
+  font-size:clamp(2.6rem,6.4vw,5rem);
+  line-height:1.08; font-weight:700; margin:1.1rem 0 1.4rem;
+  max-width:14ch;
+}
+.hero h1 em{ font-style:normal; color:var(--gold-500); }
+.hero p{
+  font-size:clamp(1.02rem,1.6vw,1.2rem);
+  color:#DCEAE6; max-width:46ch; line-height:1.85; margin:0 0 2.3rem;
+}
+.hero-actions{ display:flex; flex-wrap:wrap; gap:.9rem; }
+.hero-launch{
+  margin-top:3rem; display:flex; align-items:center; gap:.7rem;
+  font-size:.85rem; color:#BFD7D1;
+}
+.hero-launch .dot{ width:7px; height:7px; border-radius:50%; background:var(--sage-400); }
+
+/* ---------- About (Mission & Vision) ---------- */
+.about .section-head{ margin-inline:auto; text-align:center; max-width:620px; }
+.about-grid{
+  display:grid; grid-template-columns:1fr 1fr; gap:1.4rem;
+  margin-top:2.6rem;
+}
+.about-card{
+  background:#fff; padding:2.2rem 2rem; box-shadow:var(--shadow-soft); border-radius:var(--radius-md);
+}
+.about-card .eyebrow{ margin-bottom:1rem; }
+.about-card:nth-child(1) .eyebrow{ background:var(--gold-500); color:var(--teal-900); }
+.about-card:nth-child(2) .eyebrow{ background:var(--sage-400); color:var(--teal-900); }
+.about-card h3{ font-size:1.3rem; font-weight:700; margin:0 0 .8rem; }
+.about-card p{ color:var(--ink-700); line-height:1.9; margin:0; }
+
+/* ---------- Stats ---------- */
+.stats .wrap > .section-head{ margin-bottom:2.6rem; }
+.stats-grid{
+  display:grid; grid-template-columns:repeat(4,1fr); gap:1.1rem;
+}
+.stat-card{
+  background:#fff; padding:1.9rem 1.6rem 2.1rem; border-radius:var(--radius-md);
+  box-shadow:var(--shadow-soft); text-align:center;
+  display:flex; flex-direction:column; align-items:center; gap:.4rem;
+}
+.stat-card:nth-child(1) .stat-num{ color:var(--teal-700); }
+.stat-card:nth-child(2) .stat-num{ color:var(--sage-600); }
+.stat-card:nth-child(3) .stat-num{ color:var(--gold-600); }
+.stat-card:nth-child(4) .stat-num{ color:var(--teal-700); }
+.stat-num{ font-family:'Manchette', sans-serif; font-size:clamp(1.9rem,3.6vw,2.6rem); font-weight:700; }
+.stat-label{ font-size:.92rem; color:var(--ink-700); font-weight:400; }
+
+/* ---------- Domains teaser ---------- */
+.domains{ background:var(--teal-900); color:#fff; }
+.domains .section-head .eyebrow{ background:var(--gold-500); color:var(--teal-900); }
+.domains .section-head h2{ color:#fff; }
+.domains .section-head p{ color:#BFD7D1; }
+.domains-grid{
+  display:grid; grid-template-columns:repeat(2,1fr); gap:1.2rem; margin-top:2.6rem;
+}
+.domain-card{
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.12); border-radius:var(--radius-md);
+  padding:1.8rem 1.6rem; transition:background .25s var(--ease), border-color .25s var(--ease);
+}
+.domain-card:hover{ background:rgba(255,255,255,.09); border-color:rgba(245,185,46,.55); }
+.domain-num{
+  width:38px; height:38px; display:flex; align-items:center; justify-content:center;
+  background:var(--gold-500); color:var(--teal-900); font-weight:700; font-size:.85rem;
+  border-radius:var(--radius-sm);
+  margin-bottom:1.1rem;
+}
+.domain-card h3{ font-size:1.12rem; margin:0 0 .55rem; font-weight:700; }
+.domain-card p{ margin:0; color:#BFD7D1; font-size:.92rem; line-height:1.75; }
+
+/* ---------- Responsive ---------- */
+@media (max-width:900px){
+  .about-grid{ grid-template-columns:1fr; }
+  .stats-grid{ grid-template-columns:repeat(2,1fr); }
+  .domains-grid{ grid-template-columns:1fr; }
+}
+@media (max-width:560px){
+  .stats-grid{ grid-template-columns:1fr; }
+  .hero-actions{ flex-direction:column; align-items:stretch; }
+}
