@@ -56,7 +56,7 @@ if (burger && links) {
     links.style.display = open ? 'none' : 'flex';
     links.style.cssText += open
       ? ''
-      : 'position:fixed;inset-inline:0;top:64px;bottom:0;overflow-y:auto;background:#FBF7EE;flex-direction:column;align-items:stretch;padding:1.5rem;gap:1.2rem;box-shadow:0 12px 24px -12px rgba(0,0,0,.15);';
+      : 'position:fixed;inset-inline:0;top:64px;bottom:0;overflow-y:auto;background:#FBF7EE;flex-direction:column;align-items:stretch;padding:1.5rem;gap:1.2rem;box-shadow:0 12px 24px -12px rgba(0,0,0,.15);z-index:60;';
   });
 }
 
