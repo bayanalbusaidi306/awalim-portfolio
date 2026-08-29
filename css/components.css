@@ -132,7 +132,11 @@
 @media (max-width:900px){
   .nav-links{ display:none; }
   .nav-burger{ display:flex; }
-  .mega-menu{ position:static; box-shadow:none; border-bottom:none; padding-block:1rem 0; }
+  .mega-menu{
+    position:fixed; inset-inline:0; top:64px; height:calc(100vh - 64px);
+    overflow-y:auto; background:var(--cream-100);
+    box-shadow:none; border-bottom:none; padding:1.5rem; z-index:61;
+  }
   .mega-tree{ align-items:stretch; text-align:start; }
   .mega-root{ align-self:flex-start; }
   .mega-trunk{ inset-inline-start:14px; width:2px; height:14px; }
