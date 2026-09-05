@@ -7,26 +7,26 @@
 
 :root{
   /* Teal — primary brand color */
-  --teal-900:#153B3A;   /* deep backgrounds: hero, footer */
-  --teal-700:#266C6A;   /* primary buttons/links — real cover teal */
-  --teal-600:#2D7F7D;   /* hover state */
+  --teal-900:#153B3A;
+  --teal-700:#266C6A;
+  --teal-600:#2D7F7D;
 
   /* Gold — accent / CTA */
-  --gold-500:#FBD048;   /* real, sampled from logo */
-  --gold-600:#FAC009;   /* hover state */
+  --gold-500:#FBD048;
+  --gold-600:#FAC009;
 
   /* Sage — secondary accent */
-  --sage-400:#D9DD55;   /* real, sampled from logo */
-  --sage-600:#A9AD23;   /* darker, for text-on-light use */
+  --sage-400:#D9DD55;
+  --sage-600:#A9AD23;
 
   /* Cream — background */
   --cream-050:#FFFFFF;
   --cream-100:#FBF7EE;
 
-  /* Ink — text (real, sampled from the logo wordmark) */
-  --ink-900:#12493E;    /* primary text */
-  --ink-700:#4A7368;    /* secondary text */
-  --ink-400:#749288;    /* muted / decorative text only */
+  /* Ink — text */
+  --ink-900:#12493E;
+  --ink-700:#4A7368;
+  --ink-400:#749288;
 
   /* Shape & motion */
   --radius-lg:24px;

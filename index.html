@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>عوالم · Awalim — نفكر معا</title>
+<title>عوالم · Awalim — معرض أعمالنا</title>
 <link rel="icon" type="image/png" sizes="32x32" href="assets/logo/favicon/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="assets/logo/favicon/favicon-192.png">
 <link rel="apple-touch-icon" href="assets/logo/favicon/apple-touch-icon.png">
@@ -15,98 +15,20 @@
 </head>
 <body>
 
+<div class="scroll-progress"></div>
+
 <header class="nav">
   <div class="wrap">
     <div class="logo">
       <img class="logo-mark" src="assets/logo/awalim-logo-full.png" alt="مؤسسة عوالم · Awalim Institution">
     </div>
-    <nav class="nav-links">
-      <div class="nav-item">
-        <a class="nav-plain-link" href="#about">
-          <span class="t-ar">عن عوالم</span><span class="t-en">About</span>
-        </a>
-      </div>
-      <div class="nav-item">
-        <button class="nav-trigger" data-menu="education" aria-expanded="false">
-          <span class="t-ar">تعليم</span><span class="t-en">Education</span>
-          <span class="chevron" aria-hidden="true"></span>
-        </button>
-      </div>
-      <div class="nav-item">
-        <button class="nav-trigger" data-menu="writing" aria-expanded="false">
-          <span class="t-ar">كتابة</span><span class="t-en">Writing</span>
-          <span class="chevron" aria-hidden="true"></span>
-        </button>
-      </div>
-      <div class="nav-item">
-        <button class="nav-trigger" data-menu="media" aria-expanded="false">
-          <span class="t-ar">إعلام</span><span class="t-en">Media</span>
-          <span class="chevron" aria-hidden="true"></span>
-        </button>
-      </div>
-      <div class="nav-item">
-        <button class="nav-trigger" data-menu="consulting" aria-expanded="false">
-          <span class="t-ar">مشورة</span><span class="t-en">Consulting</span>
-          <span class="chevron" aria-hidden="true"></span>
-        </button>
-      </div>
-    </nav>
     <div class="nav-actions">
       <button class="lang-toggle" id="langToggle" aria-label="Switch language">
         <span class="t-ar">EN</span><span class="t-en">AR</span>
       </button>
-      <a class="nav-cta bubble" href="#footer">
-        <span class="t-ar">تواصل معنا</span><span class="t-en">Contact</span>
-      </a>
-      <button class="nav-burger" aria-label="Menu"><span></span><span></span><span></span></button>
-    </div>
-  </div>
-
-  <div class="mega-menu" id="menu-education" hidden>
-    <div class="wrap mega-tree">
-      <a class="mega-root bubble" href="education.html"><span class="t-ar">تعليم</span><span class="t-en">Education</span></a>
-      <div class="mega-trunk"></div>
-      <div class="mega-branches">
-        <a class="mega-branch" href="education.html#faith"><span class="t-ar">إيماني</span><span class="t-en">Faith</span></a>
-        <a class="mega-branch" href="education.html#cultural"><span class="t-ar">ثقافي</span><span class="t-en">Cultural</span></a>
-        <a class="mega-branch" href="education.html#scientific"><span class="t-ar">علمي</span><span class="t-en">Scientific</span></a>
-      </div>
-    </div>
-  </div>
-
-  <div class="mega-menu" id="menu-writing" hidden>
-    <div class="wrap mega-tree">
-      <a class="mega-root bubble" href="writing.html"><span class="t-ar">كتابة</span><span class="t-en">Writing</span></a>
-      <div class="mega-trunk"></div>
-      <div class="mega-branches">
-        <a class="mega-branch" href="writing.html#faith"><span class="t-ar">إيماني</span><span class="t-en">Faith</span></a>
-        <a class="mega-branch" href="writing.html#cultural"><span class="t-ar">ثقافي</span><span class="t-en">Cultural</span></a>
-        <a class="mega-branch" href="writing.html#scientific"><span class="t-ar">علمي</span><span class="t-en">Scientific</span></a>
-      </div>
-    </div>
-  </div>
-
-  <div class="mega-menu" id="menu-media" hidden>
-    <div class="wrap mega-tree">
-      <a class="mega-root bubble" href="media.html"><span class="t-ar">إعلام</span><span class="t-en">Media</span></a>
-      <div class="mega-trunk"></div>
-      <div class="mega-branches">
-        <a class="mega-branch" href="media.html#faith"><span class="t-ar">إيماني</span><span class="t-en">Faith</span></a>
-        <a class="mega-branch" href="media.html#cultural"><span class="t-ar">ثقافي</span><span class="t-en">Cultural</span></a>
-        <a class="mega-branch" href="media.html#scientific"><span class="t-ar">علمي</span><span class="t-en">Scientific</span></a>
-      </div>
-    </div>
-  </div>
-
-  <div class="mega-menu" id="menu-consulting" hidden>
-    <div class="wrap mega-tree">
-      <a class="mega-root bubble" href="consulting.html"><span class="t-ar">مشورة</span><span class="t-en">Consulting</span></a>
-      <div class="mega-trunk"></div>
-      <div class="mega-branches">
-        <a class="mega-branch" href="consulting.html#faith"><span class="t-ar">إيماني</span><span class="t-en">Faith</span></a>
-        <a class="mega-branch" href="consulting.html#cultural"><span class="t-ar">ثقافي</span><span class="t-en">Cultural</span></a>
-        <a class="mega-branch" href="consulting.html#scientific"><span class="t-ar">علمي</span><span class="t-en">Scientific</span></a>
-      </div>
+      <button class="settings-toggle" id="settingsToggle" aria-label="Settings">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+      </button>
     </div>
   </div>
 </header>
@@ -114,107 +36,581 @@
 <section class="hero">
   <div class="hero-blob gold"></div>
   <div class="hero-blob sage"></div>
+  <a href="#education" class="field-bubble fb-1 bubble"><span class="t-ar">تعليم</span><span class="t-en">Education</span></a>
+  <a href="#media" class="field-bubble fb-2 bubble"><span class="t-ar">إعلام</span><span class="t-en">Media</span></a>
+  <a href="#writing" class="field-bubble fb-3 bubble"><span class="t-ar">كتابة</span><span class="t-en">Writing</span></a>
+  <a href="#consulting" class="field-bubble fb-4 bubble"><span class="t-ar">مشورة</span><span class="t-en">Consulting</span></a>
   <div class="wrap">
-    <span class="eyebrow bubble hero-eyebrow">
-      <span class="t-ar">نفكر معا</span><span class="t-en">Let's Think Together</span>
-    </span>
-    <h1 class="display">
+    <div class="hero-logo-plate">
+      <img src="assets/logo/awalim-logo-full.png" alt="مؤسسة عوالم · Awalim Institution" class="hero-logo" data-editable="image" data-key="hero-logo">
+    </div>
+    <h1 class="display" data-editable="text" data-key="hero-title">
       <span class="t-ar">مؤسسة عوالم</span>
       <span class="t-en">Awalim Institution</span>
     </h1>
-    <p>
+    <p data-editable="text" data-key="hero-desc">
       <span class="t-ar">مؤسسة متخصصة في تعزيز الوعي المعرفيّ عند الشباب بوسائل متنوعة متجددة.</span>
       <span class="t-en">A specialized institution advancing intellectual awareness among youth through diverse, ever-renewing methods.</span>
     </p>
-    <div class="hero-actions">
-      <a href="#fields" class="btn btn-solid bubble">
-        <span class="t-ar">استكشف مجالاتنا</span><span class="t-en">Explore Our Fields</span>
-      </a>
-      <a href="#footer" class="btn btn-ghost bubble">
-        <span class="t-ar">تواصل معنا</span><span class="t-en">Contact Us</span>
-      </a>
-    </div>
   </div>
 </section>
 
-<section class="about" id="about">
+<!-- ============ تعريف عوالم ============ -->
+<section class="zone" id="definition" data-item-key="section-definition">
+  <div class="zone-blob" style="width:180px;height:180px;background:var(--gold-500);top:-40px;inset-inline-end:-30px;"></div>
+  <div class="zone-blob" style="width:140px;height:140px;background:var(--sage-400);bottom:-30px;inset-inline-start:6%;animation-delay:2s;"></div>
   <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow bubble"><span class="t-ar">عن عوالم</span><span class="t-en">About Awalim</span></span>
+    <div class="zone-head reveal">
+      <span class="eyebrow"><span class="t-ar">تعريف عوالم</span><span class="t-en">About Awalim</span></span>
+      <h2 class="display"><span class="t-ar">من نحن</span><span class="t-en">Who We Are</span></h2>
     </div>
-    <div class="about-grid">
-      <div class="about-card" id="mission">
-        <span class="eyebrow"><span class="t-ar">رسالتنا</span><span class="t-en">Our Mission</span></span>
-        <h3><span class="t-ar">الرسالة</span><span class="t-en">Mission</span></h3>
-        <p>
-          <span class="t-ar">صناعةُ مسارات متنوعة متكاملة؛ تُكسب الشباب شغف العلم وحب الدين.</span>
-          <span class="t-en">Crafting diverse, integrated pathways that instill in youth a passion for knowledge and love of faith.</span>
-        </p>
-      </div>
-      <div class="about-card" id="vision">
-        <span class="eyebrow"><span class="t-ar">رؤيتنا</span><span class="t-en">Our Vision</span></span>
-        <h3><span class="t-ar">الرؤية</span><span class="t-en">Vision</span></h3>
-        <p>
+    <div class="def-grid reveal-stagger">
+      <div class="def-card">
+        <span class="eyebrow"><span class="t-ar">الرؤية</span><span class="t-en">Vision</span></span>
+        <h3><span class="t-ar">رؤيتنا</span><span class="t-en">Our Vision</span></h3>
+        <p data-editable="text" data-key="def-vision">
           <span class="t-ar">وجهة الشباب الأولى في تنمية معارفهم وتعزيز إيمانهم.</span>
           <span class="t-en">The youth's first destination for developing their knowledge and strengthening their faith.</span>
         </p>
       </div>
-    </div>
-  </div>
-</section>
-
-<section class="domains" id="fields">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow bubble"><span class="t-ar">ماذا نصنع</span><span class="t-en">What We Build</span></span>
-      <h2 class="display"><span class="t-ar">مجالات عملنا</span><span class="t-en">Our Fields of Work</span></h2>
-      <p><span class="t-ar">تتنوع أعمالُ عوالم وتتجدد بين وقت وآخر، لكنها تعود جميعها إلى أربعة مجالات أساسية.</span><span class="t-en">Awalim's work varies and renews from time to time, but it all comes back to four core fields.</span></p>
-    </div>
-    <div class="domains-grid">
-      <div class="domain-card">
-        <div class="domain-num">01</div>
-        <h3><span class="t-ar">تعليم</span><span class="t-en">Education</span></h3>
-        <p><span class="t-ar">ثَمَّ أفنانٌ شتّى في إطار التعليم عندنا؛ فهناك دورات فكرية حضورية وافتراضية، وهناك برامج تعليمية ممتدة كصيف عوالم وفانوسها.</span><span class="t-en">Our education takes many forms — in-person and virtual intellectual courses, plus extended programs like Awalim Summer and Fanoosha.</span></p>
-        <a href="education.html" class="btn btn-ghost bubble" style="border-color:rgba(255,255,255,.4); color:#fff; margin-top:1.2rem; padding:.55rem 1.1rem; font-size:.82rem;">
-          <span class="t-ar">التفاصيل</span><span class="t-en">Details</span>
-        </a>
+      <div class="def-card">
+        <span class="eyebrow"><span class="t-ar">الرسالة</span><span class="t-en">Mission</span></span>
+        <h3><span class="t-ar">رسالتنا</span><span class="t-en">Our Mission</span></h3>
+        <p data-editable="text" data-key="def-mission">
+          <span class="t-ar">صناعةُ مسارات متنوعة متكاملة؛ تُكسب الشباب شغف العلم وحب الدين.</span>
+          <span class="t-en">Crafting diverse, integrated pathways that instill in youth a passion for knowledge and love of faith.</span>
+        </p>
       </div>
-      <div class="domain-card">
-        <div class="domain-num">02</div>
-        <h3><span class="t-ar">كتابة</span><span class="t-en">Writing</span></h3>
-        <p><span class="t-ar">لا يخلد العلم إلا بكتابته في السطور، فهنا تجدون إصدارات كتبنا الجديدة، ومساحة واسعة لكم لقراءة المقالات والمراجعات على الكتب.</span><span class="t-en">Knowledge only endures once written down — here you'll find our new book releases, and ample space to read articles and book reviews.</span></p>
-        <a href="writing.html" class="btn btn-ghost bubble" style="border-color:rgba(255,255,255,.4); color:#fff; margin-top:1.2rem; padding:.55rem 1.1rem; font-size:.82rem;">
-          <span class="t-ar">التفاصيل</span><span class="t-en">Details</span>
-        </a>
-      </div>
-      <div class="domain-card">
-        <div class="domain-num">03</div>
-        <h3><span class="t-ar">إعلام</span><span class="t-en">Media</span></h3>
-        <p><span class="t-ar">تتابعون في إعلامِ عوالم حوارات معرفية مع ضيوف أكفاء، ومقاطع قصيرة تخاطب وعي الشباب، وأشياءَ أخرى تُكشف في حينها.</span><span class="t-en">Follow Awalim's media for in-depth conversations with capable guests, short clips that speak to youth awareness, and other things revealed in time.</span></p>
-        <a href="media.html" class="btn btn-ghost bubble" style="border-color:rgba(255,255,255,.4); color:#fff; margin-top:1.2rem; padding:.55rem 1.1rem; font-size:.82rem;">
-          <span class="t-ar">التفاصيل</span><span class="t-en">Details</span>
-        </a>
-      </div>
-      <div class="domain-card">
-        <div class="domain-num">04</div>
-        <h3><span class="t-ar">مشورة</span><span class="t-en">Consulting</span></h3>
-        <p><span class="t-ar">قد تعرضُ للشاب في طريقه نحو الخير تحدّياتٌ يودُّ لو أنه يجلس مع أحد فيها ليشير له بسديد القول، لا تخف نحنُ جميعا -في عوالم- معك.</span><span class="t-en">A young person's path toward good may bring challenges they wish to sit and talk through with someone who can offer sound guidance — don't worry, all of us at Awalim are with you.</span></p>
-        <a href="consulting.html" class="btn btn-ghost bubble" style="border-color:rgba(255,255,255,.4); color:#fff; margin-top:1.2rem; padding:.55rem 1.1rem; font-size:.82rem;">
-          <span class="t-ar">التفاصيل</span><span class="t-en">Details</span>
-        </a>
+      <div class="def-card">
+        <span class="eyebrow"><span class="t-ar">البداية</span><span class="t-en">Founded</span></span>
+        <h3><span class="t-ar">تاريخ الانطلاقة</span><span class="t-en">Start Date</span></h3>
+        <p data-editable="text" data-key="def-date">
+          <span class="t-ar">17 جمادى الأولى 1442هـ الموافق 1 يناير 2021م.</span>
+          <span class="t-en">17 Jumada al-Awwal 1442 AH — 1 January 2021.</span>
+        </p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="stats" id="stats">
+<!-- ============ مجالات العمل ============ -->
+<section class="zone" id="work-areas" data-item-key="section-work-areas">
+  <div class="zone-blob" style="width:200px;height:200px;background:var(--sage-400);top:10%;inset-inline-start:-60px;animation-delay:1s;"></div>
   <div class="wrap">
-    <div class="section-head">
+    <div class="zone-head reveal">
+      <span class="eyebrow"><span class="t-ar">مجالات العمل</span><span class="t-en">Our Work Areas</span></span>
+      <h2 class="display"><span class="t-ar">كيف يتوزّع عملنا</span><span class="t-en">How Our Work Is Organized</span></h2>
+      <p><span class="t-ar">من الإدارة إلى التعليم والإعلام والكتابة والمشورة — خمسة أوجه لنفس الرسالة.</span><span class="t-en">From administration to education, media, writing, and consulting — five faces of the same mission.</span></p>
+    </div>
+
+    <div class="areas-overview reveal">
+      <div class="areas-grid">
+        <a href="#education" class="area-card">
+          <div class="area-num">01</div>
+          <h3><span class="t-ar">تعليم</span><span class="t-en">Education</span></h3>
+          <p><span class="t-ar">ثَمَّ أفنانٌ شتّى في إطار التعليم عندنا؛ فهناك دورات فكرية حضورية وافتراضية، وهناك برامج تعليمية ممتدة كصيف عوالم وفانوسها.</span><span class="t-en">Our education takes many forms — in-person and virtual courses, plus extended programs like Awalim Summer and Fanoosha.</span></p>
+        </a>
+        <a href="#writing" class="area-card">
+          <div class="area-num">02</div>
+          <h3><span class="t-ar">كتابة</span><span class="t-en">Writing</span></h3>
+          <p><span class="t-ar">لا يخلد العلم إلا بكتابته في السطور، فهنا تجدون إصدارات كتبنا الجديدة، ومساحة واسعة لكم لقراءة المقالات والمراجعات على الكتب.</span><span class="t-en">Knowledge only endures once written down — here you'll find our new releases and space to read articles and reviews.</span></p>
+        </a>
+        <a href="#media" class="area-card">
+          <div class="area-num">03</div>
+          <h3><span class="t-ar">إعلام</span><span class="t-en">Media</span></h3>
+          <p><span class="t-ar">تتابعون في إعلامِ عوالم حوارات معرفية مع ضيوف أكفاء، ومقاطع قصيرة تخاطب وعي الشباب، وأشياءَ أخرى تُكشف في حينها.</span><span class="t-en">Follow our media for in-depth conversations with capable guests and short clips that speak to youth awareness.</span></p>
+        </a>
+        <a href="#consulting" class="area-card">
+          <div class="area-num">04</div>
+          <h3><span class="t-ar">مشورة</span><span class="t-en">Consulting</span></h3>
+          <p><span class="t-ar">قد تعرضُ للشاب في طريقه نحو الخير تحدّياتٌ يودُّ لو أنه يجلس مع أحد فيها ليشير له بسديد القول، لا تخف نحنُ جميعا -في عوالم- معك.</span><span class="t-en">A young person's path toward good may bring challenges — don't worry, all of us at Awalim are with you.</span></p>
+        </a>
+      </div>
+    </div>
+
+    <!-- الجانب الإداري -->
+    <div class="subzone reveal" id="admin">
+      <div class="subzone-title">
+        <span class="num">01</span>
+        <div>
+          <h3><span class="t-ar">الجانب الإداري</span><span class="t-en">Administration</span></h3>
+          <p><span class="t-ar">كيف ندير؟</span><span class="t-en">How do we manage?</span></p>
+        </div>
+      </div>
+
+      <div class="org-chart">
+        <div class="org-root-row">
+          <div class="org-root"><span class="t-ar">الإدارة التنفيذية — سلطان الراشدي</span><span class="t-en">Executive Management — Sultan Al-Rashdi</span></div>
+          <div class="org-trunk"></div>
+        </div>
+        <div class="org-cols">
+
+          <!-- المؤسسات التابعة -->
+          <div class="org-col c-orange">
+            <div class="org-col-head"><span class="t-ar">المؤسسات التابعة</span><span class="t-en">Affiliated Entities</span></div>
+            <div class="org-dept">
+              <h4><span class="t-ar">استثمارية رسالية</span><span class="t-en">Mission Investment</span></h4>
+              <div class="sub-group">
+                <h5>تبصرة</h5>
+                <div class="members"><span>علي الجهضمي</span><span>الحسين الأغبري</span></div>
+              </div>
+            </div>
+            <div class="org-dept">
+              <h4><span class="t-ar">تطوعية</span><span class="t-en">Volunteer</span></h4>
+              <div class="members"><span>مفكرات عوالم</span><span>تليد عوالم</span></div>
+            </div>
+          </div>
+
+          <!-- المشاريع -->
+          <div class="org-col c-green">
+            <div class="org-col-head"><span class="t-ar">المشاريع</span><span class="t-en">Projects</span></div>
+            <div class="org-dept">
+              <h4><span class="t-ar">المشاريع الخارجية</span><span class="t-en">External Projects</span></h4>
+              <span class="lead">نوفل السيفي</span>
+              <div class="members"><span>مدارج</span><span>ذاكرة عمان</span></div>
+            </div>
+            <div class="org-dept">
+              <h4><span class="t-ar">المشورة</span><span class="t-en">Consulting</span></h4>
+              <span class="lead">شيخة الهنائية</span>
+            </div>
+            <div class="org-dept">
+              <h4><span class="t-ar">محبرة عوالم</span><span class="t-en">Awalim Inkwell</span></h4>
+              <span class="lead">المقداد الكندي</span>
+              <div class="members"><span>كتب</span><span>بحوث</span><span>مناهج</span><span>مقالات</span></div>
+            </div>
+            <div class="org-dept">
+              <h4><span class="t-ar">البرامج الإعلامية</span><span class="t-en">Media Programs</span></h4>
+              <span class="lead">عبدالرحيم الجهضمي، محمد البوسعيدي</span>
+              <div class="members"><span>الحوارات</span><span>مجلس عوالم</span></div>
+            </div>
+            <div class="org-dept">
+              <h4><span class="t-ar">البرامج التعليمية</span><span class="t-en">Educational Programs</span></h4>
+              <span class="lead">طارق الحارثي، البراء المحروقي / الشيماء الصوافية</span>
+              <div class="members"><span>صيف عوالم</span><span>فانوس عوالم</span><span>قراء عوالم</span><span>مفكرو عوالم</span><span>الدورات الحضورية</span></div>
+            </div>
+          </div>
+
+          <!-- الأقسام الداعمة -->
+          <div class="org-col c-blue">
+            <div class="org-col-head"><span class="t-ar">الأقسام الداعمة</span><span class="t-en">Supporting Departments</span></div>
+            <div class="org-dept">
+              <h4><span class="t-ar">القسم الإداري</span><span class="t-en">Administrative</span></h4>
+              <span class="lead">نوفل السيفي</span>
+              <div class="sub-group">
+                <h5><span class="t-ar">الإسناد</span><span class="t-en">Support</span></h5>
+                <div class="members">
+                  <span>هالة الريامية</span><span>اليقظان الندابي</span><span>فاطمة الحديدية</span><span>قصي الغيثي</span>
+                  <span>الزهراء الحمدانية</span><span>زكريا الصوافي</span><span>شيخة السالمية</span><span>قيس المعولي</span>
+                </div>
+              </div>
+              <div class="sub-group">
+                <h5><span class="t-ar">العلاقات والموارد البشرية</span><span class="t-en">Relations &amp; HR</span></h5>
+                <div class="members"><span>صابرة الحارصية</span></div>
+              </div>
+              <div class="sub-group">
+                <h5><span class="t-ar">التنسيق والمتابعة</span><span class="t-en">Coordination</span></h5>
+                <div class="members"><span>نوفل السيفي</span></div>
+              </div>
+            </div>
+            <div class="org-dept">
+              <h4><span class="t-ar">قسم التسويق</span><span class="t-en">Marketing</span></h4>
+              <span class="lead">حوراء الحراصية</span>
+              <div class="sub-group">
+                <h5><span class="t-ar">التصميم</span><span class="t-en">Design</span></h5>
+                <div class="members"><span>بيان البوسعيدية</span><span>ثويبة الجهضمية</span><span>حويزة الغازية</span><span>حفصة الحبسية</span></div>
+              </div>
+              <div class="sub-group">
+                <h5><span class="t-ar">كتابة المحتوى</span><span class="t-en">Content Writing</span></h5>
+                <div class="members"><span>رتاج النعمانية</span><span>العنود العيسائية</span></div>
+              </div>
+              <div class="sub-group">
+                <h5><span class="t-ar">إدارة النشر</span><span class="t-en">Publishing</span></h5>
+                <div class="members"><span>الزهراء الجهضمية</span><span>عفراء الصوطية</span></div>
+              </div>
+            </div>
+            <div class="org-dept">
+              <h4><span class="t-ar">القسم العلمي</span><span class="t-en">Academic</span></h4>
+              <div class="members"><span>هلال الندابي</span><span>إبراهيم آل ثاني</span><span>محمد الضويانى</span><span>غسان المعولي</span></div>
+            </div>
+            <div class="org-dept">
+              <h4><span class="t-ar">القسم الفني</span><span class="t-en">Technical</span></h4>
+              <div class="members"><span>محمد الريامي</span><span>أسعد المسكري</span></div>
+            </div>
+            <div class="org-dept">
+              <h4><span class="t-ar">القسم المالي والقانوني</span><span class="t-en">Finance &amp; Legal</span></h4>
+              <div class="members"><span>طارق الحارثي</span><span>شيخة الهنائية</span></div>
+            </div>
+            <div class="org-dept">
+              <h4><span class="t-ar">القسم التقني</span><span class="t-en">IT</span></h4>
+              <div class="members"><span>مرداس الراشدي</span></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="info-row" style="margin-top:2.4rem;">
+        <div class="info-card">
+          <h4><span class="t-ar">طريقة العمل</span><span class="t-en">Working Method</span></h4>
+          <p data-editable="text" data-key="admin-method"><span class="t-ar">أضيفي وصفًا لطريقة عمل الفريق هنا.</span><span class="t-en">Add a description of the team's working method here.</span></p>
+        </div>
+      </div>
+
+      <div class="people-grid" data-add-target="people" id="admin-people">
+        <div class="person-card" data-item-key="member-1">
+          <div class="person-photo" data-editable="image" data-key="member-1-photo">👤</div>
+          <h5>سلطان الراشدي</h5>
+          <span><span class="t-ar">الإدارة التنفيذية</span><span class="t-en">Executive Management</span></span>
+        </div>
+        <div class="person-card" data-item-key="member-2">
+          <div class="person-photo" data-editable="image" data-key="member-2-photo">👤</div>
+          <h5>نوفل السيفي</h5>
+          <span><span class="t-ar">القسم الإداري</span><span class="t-en">Administrative</span></span>
+        </div>
+        <div class="person-card" data-item-key="member-3">
+          <div class="person-photo" data-editable="image" data-key="member-3-photo">👤</div>
+          <h5>حوراء الحراصية</h5>
+          <span><span class="t-ar">قسم التسويق</span><span class="t-en">Marketing</span></span>
+        </div>
+        <div class="person-card" data-item-key="member-4">
+          <div class="person-photo" data-editable="image" data-key="member-4-photo">👤</div>
+          <h5>عبدالرحيم الجهضمي</h5>
+          <span><span class="t-ar">البرامج الإعلامية</span><span class="t-en">Media Programs</span></span>
+        </div>
+        <div class="person-card" data-item-key="member-5">
+          <div class="person-photo" data-editable="image" data-key="member-5-photo">👤</div>
+          <h5>طارق الحارثي</h5>
+          <span><span class="t-ar">البرامج التعليمية</span><span class="t-en">Educational Programs</span></span>
+        </div>
+        <div class="person-card" data-item-key="member-6">
+          <div class="person-photo" data-editable="image" data-key="member-6-photo">👤</div>
+          <h5>المقداد الكندي</h5>
+          <span><span class="t-ar">محبرة عوالم</span><span class="t-en">Awalim Inkwell</span></span>
+        </div>
+        <div class="person-card" data-item-key="member-7">
+          <div class="person-photo" data-editable="image" data-key="member-7-photo">👤</div>
+          <h5>شيخة الهنائية</h5>
+          <span><span class="t-ar">المشورة</span><span class="t-en">Consulting</span></span>
+        </div>
+        <div class="person-card" data-item-key="member-8">
+          <div class="person-photo" data-editable="image" data-key="member-8-photo">👤</div>
+          <h5>نوفل السيفي</h5>
+          <span><span class="t-ar">المشاريع الخارجية</span><span class="t-en">External Projects</span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- التعليم -->
+    <div class="subzone reveal" id="education">
+      <div class="subzone-title">
+        <span class="num">02</span>
+        <div><h3><span class="t-ar">التعليم</span><span class="t-en">Education</span></h3></div>
+      </div>
+
+      <div class="trio-grid">
+        <div class="trio-card">
+          <span class="trio-label"><span class="t-ar">إيماني</span><span class="t-en">Faith</span></span>
+          <ul><li><span class="t-ar">فانوس عوالم</span><span class="t-en">Fanoos Awalim</span></li></ul>
+        </div>
+        <div class="trio-card">
+          <span class="trio-label"><span class="t-ar">ثقافي</span><span class="t-en">Cultural</span></span>
+          <ul><li><span class="t-ar">قراء عوالم</span><span class="t-en">Awalim Readers</span></li></ul>
+        </div>
+        <div class="trio-card">
+          <span class="trio-label"><span class="t-ar">علمي</span><span class="t-en">Scientific</span></span>
+          <ul>
+            <li><span class="t-ar">عام: صيف عوالم</span><span class="t-en">General: Awalim Summer</span></li>
+            <li><span class="t-ar">تخصصي: مفكروا عوالم</span><span class="t-en">Specialized: Awalim Thinkers</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="info-row">
+        <div class="info-card">
+          <span class="big-num">15+</span>
+          <h4><span class="t-ar">دورة معرفية</span><span class="t-en">Knowledge Courses</span></h4>
+          <p><span class="t-ar">بإجمالي 1,800+ ساعة تدريبية و600+ مشارك ومشاركة.</span><span class="t-en">1,800+ training hours across 600+ participants.</span></p>
+        </div>
+        <div class="info-card">
+          <span class="big-num">3,236</span>
+          <h4><span class="t-ar">قارئ وقارئة</span><span class="t-en">Readers</span></h4>
+          <p><span class="t-ar">عبر مبادرة قراء عوالم — 17 كتابًا و20 جلسة نقاشية و150+ جائزة.</span><span class="t-en">Via Awalim Readers — 17 books, 20 sessions, 150+ awards.</span></p>
+        </div>
+      </div>
+
+      <div class="subzone-title" style="margin-top:2.4rem;">
+        <div><h3 style="font-size:1.1rem;"><span class="t-ar">الأساتذة</span><span class="t-en">Teachers</span></h3></div>
+      </div>
+      <div class="people-grid" data-add-target="people" id="teachers-people">
+        <div class="person-card" data-item-key="person-card-1">
+          <div class="person-photo" data-editable="image" data-key="teacher-1-photo">👤</div>
+          <h5 data-editable="text" data-key="teacher-1-name"><span class="t-ar">اسم الأستاذ</span><span class="t-en">Teacher Name</span></h5>
+        </div>
+        <div class="person-card" data-item-key="person-card-2">
+          <div class="person-photo" data-editable="image" data-key="teacher-2-photo">👤</div>
+          <h5 data-editable="text" data-key="teacher-2-name"><span class="t-ar">اسم الأستاذ</span><span class="t-en">Teacher Name</span></h5>
+        </div>
+        <div class="person-card" data-item-key="person-card-3">
+          <div class="person-photo" data-editable="image" data-key="teacher-3-photo">👤</div>
+          <h5 data-editable="text" data-key="teacher-3-name"><span class="t-ar">اسم الأستاذ</span><span class="t-en">Teacher Name</span></h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- الإعلام -->
+    <div class="subzone reveal" id="media">
+      <div class="subzone-title">
+        <span class="num">03</span>
+        <div><h3><span class="t-ar">الإعلام</span><span class="t-en">Media</span></h3></div>
+      </div>
+
+      <div class="trio-grid cols-4">
+        <div class="trio-card">
+          <span class="trio-label"><span class="t-ar">الفني</span><span class="t-en">Artistic</span></span>
+          <ul>
+            <li><span class="t-ar">وثائقيات عوالم</span><span class="t-en">Awalim Documentaries</span></li>
+            <li><span class="t-ar">مقاطع رمضانية قصيرة</span><span class="t-en">Short Ramadan Clips</span></li>
+          </ul>
+        </div>
+        <div class="trio-card">
+          <span class="trio-label"><span class="t-ar">إيماني</span><span class="t-en">Faith</span></span>
+          <ul><li class="empty"><span class="t-ar">—</span><span class="t-en">—</span></li></ul>
+        </div>
+        <div class="trio-card">
+          <span class="trio-label"><span class="t-ar">ثقافي</span><span class="t-en">Cultural</span></span>
+          <ul>
+            <li><span class="t-ar">حوارات</span><span class="t-en">Conversations</span></li>
+            <li><span class="t-ar">سلسلة القرآن وبناء الإنسان</span><span class="t-en">The Quran &amp; Human Formation series</span></li>
+          </ul>
+        </div>
+        <div class="trio-card">
+          <span class="trio-label"><span class="t-ar">علمي</span><span class="t-en">Scientific</span></span>
+          <ul><li class="empty"><span class="t-ar">—</span><span class="t-en">—</span></li></ul>
+        </div>
+      </div>
+
+      <div class="subzone-title" style="margin-top:2.4rem;">
+        <div><h3 style="font-size:1.1rem;"><span class="t-ar">الضيوف</span><span class="t-en">Guests</span></h3></div>
+      </div>
+      <div class="people-grid" data-add-target="people" id="guests-people">
+        <div class="person-card" data-item-key="guest-1">
+          <div class="person-photo" data-editable="image" data-key="guest-1-photo">أ</div>
+          <h5><span class="t-ar">د. أحمد الخروصي</span><span class="t-en">Dr. Ahmed Al-Kharusi</span></h5>
+          <span><span class="t-ar">فهم القرآن</span><span class="t-en">Understanding the Quran</span></span>
+        </div>
+        <div class="person-card" data-item-key="person-card-4">
+          <div class="person-photo">خ</div>
+          <h5><span class="t-ar">د. خالد الكندي</span><span class="t-en">Dr. Khalid Al-Kindi</span></h5>
+          <span><span class="t-ar">تساؤلات في الفكر والأدب</span><span class="t-en">Thought &amp; Literature</span></span>
+        </div>
+        <div class="person-card" data-item-key="person-card-5">
+          <div class="person-photo">ه</div>
+          <h5><span class="t-ar">د. هيثم طلعت</span><span class="t-en">Dr. Haitham Talaat</span></h5>
+          <span><span class="t-ar">لوازم الإلحاد</span><span class="t-en">Implications of Atheism</span></span>
+        </div>
+        <div class="person-card" data-item-key="person-card-6">
+          <div class="person-photo">ع</div>
+          <h5><span class="t-ar">د. عمرو شريف</span><span class="t-en">Dr. Amr Sharif</span></h5>
+          <span><span class="t-ar">النزعة العلموية</span><span class="t-en">Scientism</span></span>
+        </div>
+        <div class="person-card" data-item-key="person-card-7">
+          <div class="person-photo">م</div>
+          <h5><span class="t-ar">د. محمد العوضي</span><span class="t-en">Dr. Mohammed Al-Awadi</span></h5>
+          <span><span class="t-ar">خلاصة تجربة</span><span class="t-en">Lessons from Experience</span></span>
+        </div>
+        <div class="person-card" data-item-key="person-card-8">
+          <div class="person-photo">أ</div>
+          <h5><span class="t-ar">د. أبو زيد الإدريسي</span><span class="t-en">Dr. Abu Zayd Al-Idrisi</span></h5>
+          <span><span class="t-ar">الهوية</span><span class="t-en">Identity</span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- الكتابة -->
+    <div class="subzone reveal" id="writing">
+      <div class="subzone-title">
+        <span class="num">04</span>
+        <div><h3><span class="t-ar">الكتابة</span><span class="t-en">Writing</span></h3></div>
+      </div>
+
+      <div class="trio-grid">
+        <div class="trio-card">
+          <span class="trio-label"><span class="t-ar">إيماني</span><span class="t-en">Faith</span></span>
+          <ul><li class="empty"><span class="t-ar">—</span><span class="t-en">—</span></li></ul>
+        </div>
+        <div class="trio-card">
+          <span class="trio-label"><span class="t-ar">ثقافي</span><span class="t-en">Cultural</span></span>
+          <ul><li class="empty"><span class="t-ar">—</span><span class="t-en">—</span></li></ul>
+        </div>
+        <div class="trio-card">
+          <span class="trio-label"><span class="t-ar">علمي</span><span class="t-en">Scientific</span></span>
+          <ul><li class="empty"><span class="t-ar">—</span><span class="t-en">—</span></li></ul>
+        </div>
+      </div>
+
+      <div class="subzone-title" style="margin-top:2.4rem;">
+        <div>
+          <h3 style="font-size:1.1rem;"><span class="t-ar">محبرة عوالم</span><span class="t-en">Awalim Inkwell</span></h3>
+          <p data-editable="text" data-key="mahbara-desc"><span class="t-ar">أول إصدار مطبوع لعوالم، وثمرة مبادرة استكتاب عوالم بمشاركة نخبة من الباحثين — وكان ثاني أكثر كتاب مبيعًا في معرض الكتاب.</span><span class="t-en">Awalim's first printed title, born from the "Awalim Authors" initiative — the second best-selling book at the book fair.</span></p>
+        </div>
+      </div>
+
+      <div class="subzone-title" style="margin-top:2rem;">
+        <div><h3 style="font-size:1.1rem;"><span class="t-ar">كتب</span><span class="t-en">Books</span></h3></div>
+      </div>
+      <div class="book-row" data-add-target="book" id="books-row">
+        <div class="book-card" data-item-key="book-card-1">
+          <div class="book-cover" data-editable="image" data-key="book-1-cover"><img src="assets/images/book-hunak-ghayb-cover.jpg" alt="هناك غيب: رحلة إلى عالم الأمان" loading="lazy"></div>
+          <h5><span class="t-ar">هناك غيب: رحلة إلى عالم الأمان</span><span class="t-en">There Is an Unseen</span></h5>
+          <span data-editable="text" data-key="book-1-author"><span class="t-ar">اسم المؤلف</span><span class="t-en">Author name</span></span>
+        </div>
+      </div>
+
+      <div class="subzone-title" style="margin-top:2rem;">
+        <div><h3 style="font-size:1.1rem;"><span class="t-ar">مناهج</span><span class="t-en">Curricula</span></h3></div>
+      </div>
+      <div class="tag-list" data-add-target="tag" id="manahij-tags">
+        <span class="tag-pill" data-item-key="tag-pill-1"><strong><span class="t-ar">تأسيس الوعي</span><span class="t-en">Building Awareness</span></strong> · <span class="t-ar">أربع مستويات</span><span class="t-en">4 levels</span></span>
+        <span class="tag-pill" data-item-key="tag-pill-2"><strong><span class="t-ar">أسس الوعي الفكري</span><span class="t-en">Foundations of Critical Awareness</span></strong> · <span class="t-ar">ست مجلدات</span><span class="t-en">6 volumes</span></span>
+        <span class="tag-pill" data-item-key="tag-pill-3"><strong><span class="t-ar">العقيدة</span><span class="t-en">Creed</span></strong></span>
+      </div>
+
+      <div class="subzone-title" style="margin-top:2rem;">
+        <div><h3 style="font-size:1.1rem;"><span class="t-ar">بحوث</span><span class="t-en">Research</span></h3></div>
+      </div>
+      <div class="tag-list" data-add-target="tag" id="buhuth-tags">
+        <span class="tag-pill" data-item-key="tag-pill-4"><span class="t-ar">تعزيز الوعي الوقفي</span><span class="t-en">Strengthening Endowment Awareness</span></span>
+        <span class="tag-pill" data-item-key="tag-pill-5"><span class="t-ar">هموم المبتعث العماني</span><span class="t-en">Concerns of the Omani Scholarship Student</span></span>
+      </div>
+    </div>
+
+    <!-- المشورة -->
+    <div class="subzone reveal" id="consulting">
+      <div class="subzone-title">
+        <span class="num">05</span>
+        <div><h3><span class="t-ar">المشورة</span><span class="t-en">Consulting</span></h3></div>
+      </div>
+      <div class="info-row">
+        <div class="info-card">
+          <span class="big-num" data-editable="text" data-key="consult-count">—</span>
+          <h4><span class="t-ar">عدد الاستشارات</span><span class="t-en">Consultations Given</span></h4>
+        </div>
+        <div class="info-card">
+          <h4><span class="t-ar">مواضيع الاستشارات</span><span class="t-en">Consultation Topics</span></h4>
+          <div class="tag-list" style="margin-top:.8rem;" data-add-target="tag" id="consult-topics-tags">
+            <span class="tag-pill" data-item-key="tag-pill-6"><span class="t-ar">الإلحاد</span><span class="t-en">Atheism</span></span>
+            <span class="tag-pill" data-item-key="tag-pill-7"><span class="t-ar">النسوية</span><span class="t-en">Feminism</span></span>
+          </div>
+          <p style="margin-top:1rem; font-size:.82rem; color:var(--ink-700);"><span class="t-ar">بإشراف: شيخة الهنائية</span><span class="t-en">Led by: Sheikha Al-Hinai</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ المشاريع ============ -->
+<section class="zone zone-dark" id="projects" data-item-key="section-projects">
+  <div class="zone-blob" style="width:220px;height:220px;background:var(--gold-500);top:-50px;inset-inline-end:8%;opacity:.18;"></div>
+  <div class="zone-blob" style="width:160px;height:160px;background:var(--sage-400);bottom:-40px;inset-inline-start:-30px;opacity:.18;animation-delay:1.6s;"></div>
+  <div class="wrap">
+    <div class="zone-head reveal">
+      <span class="eyebrow"><span class="t-ar">المشاريع</span><span class="t-en">Projects</span></span>
+      <h2 class="display"><span class="t-ar">شراكاتنا ومبادراتنا</span><span class="t-en">Our Partnerships &amp; Initiatives</span></h2>
+    </div>
+
+    <div class="subzone reveal">
+      <div class="subzone-title">
+        <div><h3 style="font-size:1.1rem;"><span class="t-ar">الشراكات والتعاونات</span><span class="t-en">Partnerships</span></h3></div>
+      </div>
+      <div class="name-grid" data-add-target="name" id="partners-names">
+        <div class="name-card" data-item-key="name-card-1"><span class="dot"></span><div><h5><span class="t-ar">مؤسسة الإمام جابر بن زيد الوقفية</span><span class="t-en">Imam Jabir bin Zaid Waqf Foundation</span></h5></div></div>
+        <div class="name-card" data-item-key="name-card-2"><span class="dot"></span><div><h5><span class="t-ar">مكتبة الرواحي العامة</span><span class="t-en">Al-Rawahi Public Library</span></h5></div></div>
+        <div class="name-card" data-item-key="name-card-3"><span class="dot"></span><div><h5><span class="t-ar">مؤسسة بوشر الوقفية</span><span class="t-en">Bausher Waqf Foundation</span></h5></div></div>
+      </div>
+    </div>
+
+    <div class="subzone reveal">
+      <div class="subzone-title">
+        <div><h3 style="font-size:1.1rem;"><span class="t-ar">المشاريع الخارجية</span><span class="t-en">External Projects</span></h3></div>
+      </div>
+      <div class="name-grid" data-add-target="name" id="external-proj-names">
+        <div class="name-card" data-item-key="name-card-4"><span class="dot"></span><div><h5><span class="t-ar">مدارج</span><span class="t-en">Madarij</span></h5></div></div>
+        <div class="name-card" data-item-key="name-card-5"><span class="dot"></span><div><h5><span class="t-ar">ذاكرة عمان</span><span class="t-en">Memory of Oman</span></h5></div></div>
+      </div>
+    </div>
+
+    <div class="subzone reveal">
+      <div class="subzone-title">
+        <div><h3 style="font-size:1.1rem;"><span class="t-ar">البرامج التعليمية</span><span class="t-en">Educational Programs</span></h3></div>
+      </div>
+      <div class="name-grid" data-add-target="name" id="edu-programs-names">
+        <div class="name-card" data-item-key="name-card-6"><span class="dot"></span><div><h5><span class="t-ar">صيف عوالم</span><span class="t-en">Awalim Summer</span></h5></div></div>
+        <div class="name-card" data-item-key="name-card-7"><span class="dot"></span><div><h5><span class="t-ar">فانوس عوالم</span><span class="t-en">Fanoos Awalim</span></h5></div></div>
+        <div class="name-card" data-item-key="name-card-8"><span class="dot"></span><div><h5><span class="t-ar">قراء عوالم</span><span class="t-en">Awalim Readers</span></h5></div></div>
+        <div class="name-card" data-item-key="name-card-9"><span class="dot"></span><div><h5><span class="t-ar">مفكروا عوالم</span><span class="t-en">Awalim Thinkers</span></h5></div></div>
+        <div class="name-card" data-item-key="name-card-10"><span class="dot"></span><div><h5><span class="t-ar">الدورات الحضورية</span><span class="t-en">In-Person Courses</span></h5></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ المؤسسات التابعة ============ -->
+<section class="zone" id="affiliates" data-item-key="section-affiliates">
+  <div class="zone-blob" style="width:160px;height:160px;background:var(--gold-500);top:-30px;inset-inline-start:-20px;animation-delay:2.4s;"></div>
+  <div class="wrap">
+    <div class="zone-head reveal">
+      <span class="eyebrow"><span class="t-ar">المؤسسات التابعة</span><span class="t-en">Affiliated Entities</span></span>
+      <h2 class="display"><span class="t-ar">امتداد رسالتنا</span><span class="t-en">Extending Our Mission</span></h2>
+    </div>
+
+    <div class="subzone reveal">
+      <div class="subzone-title">
+        <div><h3 style="font-size:1.1rem;"><span class="t-ar">استثمارية رسالية</span><span class="t-en">Mission-Driven Investment</span></h3></div>
+      </div>
+      <div class="name-grid" data-add-target="name" id="tabsirah-names">
+        <div class="name-card" data-item-key="name-card-11"><span class="dot"></span><div><h5><span class="t-ar">تبصرة</span><span class="t-en">Tabsirah</span></h5><span>علي الجهضمي، الحسين الأغبري</span></div></div>
+      </div>
+    </div>
+
+    <div class="subzone reveal">
+      <div class="subzone-title">
+        <div><h3 style="font-size:1.1rem;"><span class="t-ar">تطوعية</span><span class="t-en">Volunteer</span></h3></div>
+      </div>
+      <div class="name-grid" data-add-target="name" id="volunteer-names">
+        <div class="name-card" data-item-key="name-card-12"><span class="dot"></span><div><h5><span class="t-ar">مفكرات عوالم — نسائي</span><span class="t-en">Awalim Thinkers — Women's</span></h5></div></div>
+        <div class="name-card" data-item-key="name-card-13"><span class="dot"></span><div><h5><span class="t-ar">تليد عوالم</span><span class="t-en">Talid Awalim</span></h5></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ الزيارات ============ -->
+<section class="zone" id="visits" data-item-key="section-visits">
+  <div class="zone-blob" style="width:150px;height:150px;background:var(--sage-400);bottom:-30px;inset-inline-end:6%;animation-delay:.8s;"></div>
+  <div class="wrap">
+    <div class="zone-head reveal">
+      <span class="eyebrow"><span class="t-ar">الزيارات</span><span class="t-en">Visits</span></span>
+      <h2 class="display"><span class="t-ar">إحصاءات وانطباعات</span><span class="t-en">Statistics &amp; Impressions</span></h2>
+      <p><span class="t-ar">لكل برامج عوالم.</span><span class="t-en">Across all of Awalim's programs.</span></p>
+    </div>
+    <div class="info-row">
+      <div class="info-card">
+        <p data-editable="text" data-key="visits-1"><span class="t-ar">أضيفي إحصائية أو انطباعًا هنا.</span><span class="t-en">Add a statistic or an impression here.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ الإحصائيات (كما هي) ============ -->
+<section class="zone stats" id="stats" data-item-key="section-stats">
+  <div class="zone-blob" style="width:170px;height:170px;background:var(--gold-500);top:-30px;inset-inline-end:-20px;animation-delay:1.2s;"></div>
+  <div class="wrap">
+    <div class="section-head reveal">
       <span class="eyebrow bubble"><span class="t-ar">إحصائيات</span><span class="t-en">Statistics</span></span>
       <h2 class="display"><span class="t-ar">أرقام من مسيرتنا</span><span class="t-en">Numbers From Our Journey</span></h2>
       <p><span class="t-ar">هنا بعض الأرقام والإحصائيات عمّا أنجز في مؤسسة عوالم خلال السنوات السابقة.</span><span class="t-en">Some numbers and statistics on what Awalim Institution has accomplished over the past years.</span></p>
     </div>
-    <div class="stats-grid">
+    <div class="stats-grid reveal-stagger">
       <div class="stat-card">
         <span class="stat-num" data-count="2000000" data-suffix="+">0</span>
         <span class="stat-label"><span class="t-ar">مشاهدة</span><span class="t-en">Views</span></span>
@@ -235,27 +631,59 @@
   </div>
 </section>
 
-<footer class="footer-cta" id="footer">
+<footer class="footer-cta">
   <div class="wrap">
-    <p class="tag">#نفكر_معا</p>
-    <p><span class="t-ar">تابعوا عوالم وكونوا جزءًا من الحوار</span><span class="t-en">Follow Awalim and be part of the conversation</span></p>
-    <div class="footer-contact">
-      <a href="tel:+96899801406">+968 9980 1406</a>
-      <a href="mailto:awalimPlatform@gmail.com">awalimPlatform@gmail.com</a>
-    </div>
+    <p class="tag" data-editable="text" data-key="footer-tag">#نفكر_معا</p>
+    <p data-editable="text" data-key="footer-lead"><span class="t-ar">تابعوا عوالم وكونوا جزءًا من الحوار</span><span class="t-en">Follow Awalim and be part of the conversation</span></p>
     <div class="footer-social">
       <a href="https://youtube.com/@awalim3227" target="_blank" rel="noopener noreferrer" aria-label="YouTube">YT</a>
       <a href="https://www.instagram.com/_awalim" target="_blank" rel="noopener noreferrer" aria-label="Instagram">IG</a>
       <a href="https://x.com/_awalim" target="_blank" rel="noopener noreferrer" aria-label="X">X</a>
     </div>
-    <p class="footer-fine">
+    <p class="footer-fine" data-editable="text" data-key="footer-fine">
       <span class="t-ar">© مؤسسة عوالم — جميع الحقوق محفوظة</span>
       <span class="t-en">© Institution Awalim — All rights reserved</span>
     </p>
   </div>
 </footer>
 
+<!-- ============ Settings / Editor panel ============ -->
+<div class="editor-backdrop" id="editorBackdrop"></div>
+<aside class="editor-panel" id="editorPanel">
+  <h3><span class="t-ar">الإعدادات والتحرير</span><span class="t-en">Settings &amp; Editing</span></h3>
+  <p class="sub">
+    <span class="t-ar">هذا التحرير محلي بمتصفحك فقط — ما يُحدّث الموقع المنشور لباقي الزوار. عدّلي، ثم اضغطي "تصدير HTML" وارفعي الملف الناتج بجيتهب زي أي تحديث ثاني.</span>
+    <span class="t-en">Editing here is local to your browser only — it does not update the live site for other visitors. Edit, then click "Export HTML" and upload the resulting file to GitHub like any other update.</span>
+  </p>
+  <div class="editor-row">
+    <span><span class="t-ar">وضع التحرير</span><span class="t-en">Edit Mode</span></span>
+    <button class="editor-switch" id="editModeSwitch" aria-label="Toggle edit mode"></button>
+  </div>
+  <div class="editor-row">
+    <span><span class="t-ar">حجم الخط</span><span class="t-en">Text Size</span></span>
+    <div class="font-size-control">
+      <button type="button" data-size="sm" class="active">A</button>
+      <button type="button" data-size="md">A</button>
+      <button type="button" data-size="lg">A</button>
+    </div>
+  </div>
+  <p class="sub" style="margin:.8rem 0 0;">
+    <span class="t-ar">بوضع التحرير: أي نص بالصفحة قابل للتعديل مباشرة، وكل بطاقة أو قسم فيه زر × أحمر للحذف، وكل قائمة فيها زر "+ إضافة".</span>
+    <span class="t-en">In edit mode: any text on the page is directly editable, every card or section has a red × to delete, and every list has a "+ Add" button.</span>
+  </p>
+  <button class="editor-btn" id="addSectionBtn" style="margin-top:1rem;"><span class="t-ar">+ إضافة قسم جديد</span><span class="t-en">+ Add New Section</span></button>
+  <div class="section-type-picker" id="sectionTypePicker" hidden>
+    <button type="button" data-type="list"><span class="t-ar">قائمة عناصر</span><span class="t-en">List of Items</span></button>
+    <button type="button" data-type="image"><span class="t-ar">نص وصورة</span><span class="t-en">Text + Image</span></button>
+    <button type="button" data-type="stats"><span class="t-ar">نص ومخطط أرقام</span><span class="t-en">Text + Numbers</span></button>
+  </div>
+  <button class="editor-btn" id="exportHtmlBtn"><span class="t-ar">تصدير HTML</span><span class="t-en">Export HTML</span></button>
+  <button class="editor-btn secondary" id="clearEditsBtn"><span class="t-ar">مسح كل التعديلات المحلية</span><span class="t-en">Clear all local edits</span></button>
+</aside>
+<input type="file" id="editorFileInput" accept="image/*" style="display:none;">
+
 <script src="js/main.js" defer></script>
+<script src="js/editor.js" defer></script>
 
 </body>
 </html>

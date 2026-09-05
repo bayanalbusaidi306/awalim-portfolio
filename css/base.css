@@ -1,9 +1,11 @@
 /* ============================================================
-   base.css — reset + base typography, shared by every page
+   base.css — reset + base typography, shared by the whole page
    ============================================================ */
 
 *{ box-sizing:border-box; }
-html{ scroll-behavior:smooth; }
+html{ scroll-behavior:smooth; font-size:108%; }
+html.font-md{ font-size:120%; }
+html.font-lg{ font-size:134%; }
 body{
   margin:0;
   background:var(--cream-100);
@@ -30,6 +32,31 @@ section{ padding-block:clamp(3.5rem,7vw,6.5rem); }
   padding-inline:clamp(1.25rem,4vw,2.5rem);
 }
 
+/* ---------- Scroll-reveal utility (used throughout the one-page layout) ---------- */
+.reveal{
+  opacity:0;
+  transform:translateY(28px);
+  transition:opacity .7s var(--ease), transform .7s var(--ease);
+}
+.reveal.in{
+  opacity:1;
+  transform:translateY(0);
+}
+.reveal-stagger > *{
+  opacity:0;
+  transform:translateY(24px);
+  transition:opacity .6s var(--ease), transform .6s var(--ease);
+}
+.reveal-stagger.in > *{ opacity:1; transform:translateY(0); }
+.reveal-stagger.in > *:nth-child(1){ transition-delay:.05s; }
+.reveal-stagger.in > *:nth-child(2){ transition-delay:.12s; }
+.reveal-stagger.in > *:nth-child(3){ transition-delay:.19s; }
+.reveal-stagger.in > *:nth-child(4){ transition-delay:.26s; }
+.reveal-stagger.in > *:nth-child(5){ transition-delay:.33s; }
+.reveal-stagger.in > *:nth-child(6){ transition-delay:.40s; }
+.reveal-stagger.in > *:nth-child(7){ transition-delay:.47s; }
+
 @media (prefers-reduced-motion:reduce){
   *{ animation:none !important; transition:none !important; }
+  .reveal, .reveal-stagger > *{ opacity:1 !important; transform:none !important; }
 }
