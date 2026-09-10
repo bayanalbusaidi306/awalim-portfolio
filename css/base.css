@@ -8,7 +8,10 @@ html.font-md{ font-size:120%; }
 html.font-lg{ font-size:134%; }
 body{
   margin:0;
-  background:var(--cream-100);
+  background:linear-gradient(180deg,
+    var(--cream-100) 0%, #fff 12%, var(--cream-100) 24%,
+    #fff 36%, var(--cream-100) 48%, #fff 60%,
+    var(--cream-100) 72%, #fff 84%, var(--cream-100) 100%);
   color:var(--ink-900);
   font-family:'Manchette', sans-serif;
   -webkit-font-smoothing:antialiased;
