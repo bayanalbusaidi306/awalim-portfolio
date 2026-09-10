@@ -233,14 +233,12 @@
   box-shadow:var(--shadow-soft);
 }
 .course-photo{
-  aspect-ratio:4/3; background:var(--cream-050);
+  position:relative; aspect-ratio:4/3; background:var(--cream-050);
   border-bottom:1.5px dashed rgba(38,108,106,.3);
-  background-size:cover; background-position:center; background-repeat:no-repeat;
   display:flex; align-items:center; justify-content:center;
   color:var(--ink-400); font-size:1.8rem; overflow:hidden;
 }
-.course-photo img{ width:100%; height:100%; object-fit:cover; }
-.course-photo.has-image{ border-style:solid; border-color:transparent; color:transparent; font-size:0; }
+.course-photo img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
 .course-body{ padding:1.2rem 1.3rem 1.4rem; }
 .course-body h3{ font-size:1.25rem; font-weight:700; margin:0 0 .6rem; }
 .course-body p{ font-size:1.02rem; color:var(--ink-700); line-height:1.8; margin:0; }
