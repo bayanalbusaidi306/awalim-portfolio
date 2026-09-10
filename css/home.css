@@ -219,11 +219,11 @@
 
 /* ---------- Educational programs table (برامج عوالم التعليمية) ---------- */
 .program-grid{
-  display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(480px,1fr));
   gap:2.2rem; margin-top:2.8rem;
 }
 .program-card{
-  position:relative; z-index:1;
+  position:relative; z-index:1; min-width:0;
   background:#fff; border-radius:var(--radius-md);
   box-shadow:0 10px 22px -14px rgba(10,59,54,.28);
   padding:1.6rem 1.5rem;
@@ -251,13 +251,13 @@
   .program-years{ grid-template-columns:1fr; }
   .program-years::after{ display:none; }
 }
-.program-year{ background:var(--cream-050); border-radius:var(--radius-sm); padding:1rem 1rem 1.1rem; }
+.program-year{ min-width:0; background:var(--cream-050); border-radius:var(--radius-sm); padding:1rem 1rem 1.1rem; }
 .program-year .year-label{
   display:block; font-size:.95rem; font-weight:700; color:var(--teal-700); margin-bottom:.8rem;
 }
 .program-mini-stats{ display:grid; grid-template-columns:repeat(2,1fr); gap:.9rem 1rem; }
-.program-mini-stats > div{ text-align:center; }
-.program-mini-stats .stat-num{ font-size:1.35rem; display:block; }
+.program-mini-stats > div{ min-width:0; text-align:center; }
+.program-mini-stats .stat-num{ font-size:1.35rem; display:block; white-space:nowrap; }
 .program-mini-stats .stat-label{ font-size:.9rem; }
 
 /* ---------- Courses (دورات) ---------- */
