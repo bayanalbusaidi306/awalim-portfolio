@@ -5,7 +5,9 @@
 /* ---------- Hero ---------- */
 .hero{
   position:relative;
-  background:radial-gradient(120% 140% at 15% 0%, var(--teal-600), var(--teal-900) 75%);
+  background:
+    linear-gradient(to bottom, transparent 80%, var(--cream-100) 100%),
+    radial-gradient(120% 140% at 15% 0%, var(--teal-600), var(--teal-900) 75%);
   color:#fff;
   padding-block:clamp(4.5rem,10vw,7.5rem) clamp(6rem,12vw,9rem);
   overflow:hidden;
@@ -58,7 +60,7 @@
 }
 
 /* ---------- Generic content section shell ---------- */
-.zone{ scroll-margin-top:70px; position:relative; overflow:hidden; }
+.zone{ scroll-margin-top:70px; position:relative; }
 .zone-blob{
   position:absolute; z-index:0; pointer-events:none;
   border-radius:50% 50% 48% 52% / 55% 45% 55% 45%;
