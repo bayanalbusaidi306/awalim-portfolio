@@ -63,13 +63,15 @@ if (nums.length) {
 // Scroll-reveal: fade + rise elements into view as the visitor scrolls, replaying both ways
 const revealTargets = document.querySelectorAll('.reveal, .reveal-stagger');
 if (revealTargets.length) {
-  // Generous margin: elements trigger well before/after they cross the viewport edge,
-  // so a fast flick or a jump-scroll can't skip a section without it ever appearing.
+  // Small negative bottom margin: the element must actually be on screen (past the
+  // viewport edge by a bit) before it triggers, so the motion is visible as it
+  // happens instead of finishing off-screen. sweepReveal (below) is the safety net
+  // for fast flicks/jump-scrolls, so this margin doesn't need to do that job too.
   const revealIo = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       entry.target.classList.toggle('in', entry.isIntersecting);
     });
-  }, { threshold: 0, rootMargin: '250px 0px 250px 0px' });
+  }, { threshold: 0, rootMargin: '0px 0px -12% 0px' });
   revealTargets.forEach((t) => revealIo.observe(t));
 
   // Safety net: whatever the scroll pattern was (a fast flick, an End-key jump, a
@@ -90,4 +92,22 @@ if (revealTargets.length) {
     sweepTimer = setTimeout(() => { sweepReveal(); sweepTimer = null; }, 150);
   }, { passive: true });
   window.addEventListener('load', sweepReveal);
+}
+
+// Org-structure "Projects" curtain: center it on the page rather than on its own
+// tab, since the tab itself sits slightly off page-center.
+const centerCurtain = document.querySelector('#org-structure .tab-reveal.dir-up');
+if (centerCurtain) {
+  const centerTab = centerCurtain.closest('.phil-tab');
+  const wrap = centerTab.closest('.wrap');
+  function updateCenterOffset() {
+    const wrapRect = wrap.getBoundingClientRect();
+    const tabRect = centerTab.getBoundingClientRect();
+    const pageCenterX = wrapRect.left + wrapRect.width / 2;
+    const tabCenterX = tabRect.left + tabRect.width / 2;
+    centerCurtain.style.setProperty('--center-offset', (pageCenterX - tabCenterX) + 'px');
+  }
+  centerTab.addEventListener('mouseenter', updateCenterOffset);
+  window.addEventListener('resize', updateCenterOffset);
+  updateCenterOffset();
 }

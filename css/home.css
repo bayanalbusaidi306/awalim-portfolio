@@ -44,7 +44,7 @@
 .field-bubble{
   position:absolute; z-index:2;
   display:flex; align-items:center; justify-content:center;
-  padding:.8rem 1.4rem; font-weight:700; font-size:.92rem;
+  padding:1.15rem 2.1rem; font-weight:700; font-size:1.2rem;
   color:var(--teal-900); text-align:center;
   box-shadow:0 14px 28px -12px rgba(0,0,0,.35);
   transition:transform .25s var(--ease);
@@ -151,14 +151,14 @@
 
 .tab-reveal.dir-up{
   bottom:calc(100% + 14px); top:auto; left:50%;
-  transform:translateX(-50%) translateY(8px);
+  transform:translateX(calc(-50% + var(--center-offset, 0px))) translateY(8px);
 }
 .tab-reveal.dir-up::after{
   top:100%; bottom:auto; left:50%; transform:translateX(-50%);
   border-bottom-color:transparent; border-top-color:var(--teal-900);
 }
 .phil-tab.has-content:hover .tab-reveal.dir-up{
-  transform:translateX(-50%) translateY(0);
+  transform:translateX(calc(-50% + var(--center-offset, 0px))) translateY(0);
 }
 /* Below this width the side curtains can run off the viewport edge — fall back to opening downward */
 @media (max-width:1100px){
