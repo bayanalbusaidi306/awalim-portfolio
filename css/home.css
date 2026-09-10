@@ -220,10 +220,12 @@
 /* ---------- Educational programs table (برامج عوالم التعليمية) ---------- */
 .program-grid{
   display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-  gap:1.6rem; margin-top:2.8rem;
+  gap:2.2rem; margin-top:2.8rem;
 }
 .program-card{
-  background:#fff; border-radius:var(--radius-md); box-shadow:var(--shadow-soft);
+  position:relative; z-index:1;
+  background:#fff; border-radius:var(--radius-md);
+  box-shadow:0 10px 22px -14px rgba(10,59,54,.28);
   padding:1.6rem 1.5rem;
 }
 .program-card:nth-child(1) .stat-num{ color:var(--teal-700); }
