@@ -240,16 +240,23 @@
   padding:.35rem .85rem; border-radius:999px; white-space:nowrap;
 }
 .growth-badge .stat-num{ font-size:.95rem; font-family:inherit; font-weight:700; color:inherit !important; }
-.program-years{ display:grid; grid-template-columns:1fr 1fr; gap:1.1rem; }
-@media (max-width:560px){ .program-years{ grid-template-columns:1fr; } }
+.program-years{ position:relative; display:grid; grid-template-columns:1fr 1fr; gap:1.1rem; }
+.program-years::after{
+  content:""; position:absolute; top:.1rem; bottom:.1rem; left:50%;
+  width:2px; background:rgba(38,108,106,.15); transform:translateX(-50%);
+}
+@media (max-width:560px){
+  .program-years{ grid-template-columns:1fr; }
+  .program-years::after{ display:none; }
+}
 .program-year{ background:var(--cream-050); border-radius:var(--radius-sm); padding:1rem 1rem 1.1rem; }
 .program-year .year-label{
-  display:block; font-size:.8rem; font-weight:700; color:var(--teal-700); margin-bottom:.8rem;
+  display:block; font-size:.95rem; font-weight:700; color:var(--teal-700); margin-bottom:.8rem;
 }
 .program-mini-stats{ display:grid; grid-template-columns:repeat(2,1fr); gap:.9rem 1rem; }
 .program-mini-stats > div{ text-align:center; }
 .program-mini-stats .stat-num{ font-size:1.35rem; display:block; }
-.program-mini-stats .stat-label{ font-size:.72rem; }
+.program-mini-stats .stat-label{ font-size:.9rem; }
 
 /* ---------- Courses (دورات) ---------- */
 .course-grid{
