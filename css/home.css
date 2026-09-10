@@ -219,23 +219,23 @@
 
 /* ---------- Educational programs table (برامج عوالم التعليمية) ---------- */
 .program-grid{
-  display:grid; grid-template-columns:repeat(auto-fit,minmax(480px,1fr));
-  gap:2.2rem; margin-top:2.8rem;
+  display:grid; grid-template-columns:1fr;
+  gap:1.8rem; margin-top:2.8rem;
 }
 .program-card{
   position:relative; z-index:1; min-width:0;
   background:#fff; border-radius:var(--radius-md);
   box-shadow:0 10px 22px -14px rgba(10,59,54,.28);
-  padding:1.6rem 1.5rem;
+  padding:1.8rem 1.8rem;
 }
-.program-card:nth-child(1) .stat-num{ color:var(--teal-700); }
+.program-card:nth-child(1) .stat-num{ color:var(--teal-900); }
 .program-card:nth-child(2) .stat-num{ color:var(--gold-600); }
 .program-card:nth-child(3) .stat-num{ color:var(--sage-600); }
 .program-card-head{
   display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:.6rem 1rem;
   margin-bottom:1.4rem; padding-bottom:1rem; border-bottom:1px solid rgba(38,108,106,.12);
 }
-.program-card-head h3{ font-size:1.2rem; font-weight:700; margin:0; color:var(--teal-900); }
+.program-card-head h3{ font-size:1.6rem; font-weight:700; margin:0; color:var(--teal-900); }
 .growth-badge{
   display:inline-flex; align-items:baseline; gap:.25rem;
   background:var(--gold-500); color:var(--teal-900); font-weight:700; font-size:.82rem;
