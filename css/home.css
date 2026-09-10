@@ -66,10 +66,43 @@
   animation:float 12s ease-in-out infinite;
 }
 .zone .wrap{ position:relative; z-index:1; }
+.zone-alt{ background:var(--cream-050); }
 .zone-head{ text-align:center; max-width:680px; margin-inline:auto; }
 .zone-head .eyebrow{ background:var(--gold-500); color:var(--teal-900); }
-.zone-head h2{ font-size:clamp(1.9rem,3.8vw,2.8rem); font-weight:700; margin:.9rem 0 .7rem; }
+.zone-head h2{ font-size:clamp(2.2rem,4.6vw,3.6rem); font-weight:700; margin:.9rem 0 .7rem; }
 .zone-head p{ color:var(--ink-700); line-height:1.85; margin:0; }
+
+/* ---------- Philosophy hover tabs ---------- */
+.phil-tabs{
+  display:flex; flex-wrap:wrap; justify-content:center; align-items:center;
+  gap:.9rem 1.3rem; margin-top:2.8rem; max-width:920px; margin-inline:auto;
+}
+.phil-tab{
+  display:inline-block;
+  font-size:1.05rem; font-weight:700; color:var(--ink-900);
+  padding:.7rem 1.4rem; border-radius:999px;
+  background:#fff; border:1.5px solid rgba(38,108,106,.15);
+  cursor:default; user-select:none;
+  transition:transform .25s var(--ease), color .25s var(--ease),
+    border-color .25s var(--ease), background .25s var(--ease), opacity .25s var(--ease);
+}
+.phil-tabs:hover .phil-tab{ opacity:.5; }
+.phil-tab:hover{
+  opacity:1 !important;
+  transform:translateY(-3px) scale(1.14);
+  color:var(--teal-900); background:var(--gold-500); border-color:var(--gold-500);
+}
+.phil-tabs.sub{ margin-top:1.4rem; gap:.6rem .9rem; }
+.phil-tabs.sub .phil-tab{ font-size:.88rem; padding:.5rem 1.05rem; background:var(--cream-100); }
+.phil-subhead{
+  text-align:center; font-size:1.05rem; font-weight:700; color:var(--teal-700);
+  margin:2.8rem 0 0;
+}
+.coming-soon{
+  display:inline-block; margin-top:1.4rem; font-size:.85rem; font-weight:700;
+  color:var(--teal-700); background:#fff; border:1px solid rgba(38,108,106,.2);
+  padding:.5rem 1.2rem; border-radius:999px;
+}
 
 .subzone{ margin-top:clamp(3rem,6vw,4.5rem); }
 .subzone-title{ display:flex; align-items:center; gap:.7rem; margin-bottom:1.6rem; }
