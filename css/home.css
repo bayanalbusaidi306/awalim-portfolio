@@ -94,6 +94,25 @@
 }
 .phil-tabs.sub{ margin-top:1.4rem; gap:.6rem .9rem; }
 .phil-tabs.sub .phil-tab{ font-size:.88rem; padding:.5rem 1.05rem; background:var(--cream-100); }
+
+/* Tabs that reveal a content bubble above them on hover */
+.phil-tab.has-content{ position:relative; }
+.tab-reveal{
+  position:absolute; bottom:calc(100% + 12px); left:50%;
+  transform:translateX(-50%) translateY(6px);
+  background:var(--teal-900); color:#fff; font-size:.8rem; font-weight:600;
+  padding:.55rem 1rem; border-radius:var(--radius-sm); white-space:nowrap;
+  opacity:0; pointer-events:none; z-index:2;
+  transition:opacity .22s var(--ease), transform .22s var(--ease);
+  box-shadow:var(--shadow-soft);
+}
+.tab-reveal::after{
+  content:""; position:absolute; top:100%; left:50%; transform:translateX(-50%);
+  border:6px solid transparent; border-top-color:var(--teal-900);
+}
+.phil-tab.has-content:hover .tab-reveal{
+  opacity:1; transform:translateX(-50%) translateY(0);
+}
 .phil-subhead{
   text-align:center; font-size:1.05rem; font-weight:700; color:var(--teal-700);
   margin:2.8rem 0 0;
