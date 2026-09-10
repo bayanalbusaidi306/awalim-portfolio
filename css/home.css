@@ -217,6 +217,40 @@
 .area-card p{ margin:0 0 1.2rem; color:#BFD7D1; font-size:.92rem; line-height:1.75; }
 @media (max-width:640px){ .areas-grid{ grid-template-columns:1fr; } }
 
+/* ---------- Educational programs table (برامج عوالم التعليمية) ---------- */
+.program-grid{
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:1.6rem; margin-top:2.8rem;
+}
+.program-card{
+  background:#fff; border-radius:var(--radius-md); box-shadow:var(--shadow-soft);
+  padding:1.6rem 1.5rem;
+}
+.program-card:nth-child(1) .stat-num{ color:var(--teal-700); }
+.program-card:nth-child(2) .stat-num{ color:var(--gold-600); }
+.program-card:nth-child(3) .stat-num{ color:var(--sage-600); }
+.program-card-head{
+  display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:.6rem 1rem;
+  margin-bottom:1.4rem; padding-bottom:1rem; border-bottom:1px solid rgba(38,108,106,.12);
+}
+.program-card-head h3{ font-size:1.2rem; font-weight:700; margin:0; color:var(--teal-900); }
+.growth-badge{
+  display:inline-flex; align-items:baseline; gap:.25rem;
+  background:var(--gold-500); color:var(--teal-900); font-weight:700; font-size:.82rem;
+  padding:.35rem .85rem; border-radius:999px; white-space:nowrap;
+}
+.growth-badge .stat-num{ font-size:.95rem; font-family:inherit; font-weight:700; color:inherit !important; }
+.program-years{ display:grid; grid-template-columns:1fr 1fr; gap:1.1rem; }
+@media (max-width:560px){ .program-years{ grid-template-columns:1fr; } }
+.program-year{ background:var(--cream-050); border-radius:var(--radius-sm); padding:1rem 1rem 1.1rem; }
+.program-year .year-label{
+  display:block; font-size:.8rem; font-weight:700; color:var(--teal-700); margin-bottom:.8rem;
+}
+.program-mini-stats{ display:grid; grid-template-columns:repeat(2,1fr); gap:.9rem 1rem; }
+.program-mini-stats > div{ text-align:center; }
+.program-mini-stats .stat-num{ font-size:1.35rem; display:block; }
+.program-mini-stats .stat-label{ font-size:.72rem; }
+
 /* ---------- Courses (دورات) ---------- */
 .course-grid{
   display:grid; grid-template-columns:repeat(3,1fr);
