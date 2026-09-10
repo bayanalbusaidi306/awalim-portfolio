@@ -217,6 +217,28 @@
 .area-card p{ margin:0 0 1.2rem; color:#BFD7D1; font-size:.92rem; line-height:1.75; }
 @media (max-width:640px){ .areas-grid{ grid-template-columns:1fr; } }
 
+/* ---------- Courses (دورات) ---------- */
+.course-grid{
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:1.4rem; margin-top:2.8rem;
+}
+.course-card{
+  background:#fff; border-radius:var(--radius-md); overflow:hidden;
+  box-shadow:var(--shadow-soft);
+}
+.course-photo{
+  aspect-ratio:4/3; background:var(--cream-050);
+  border-bottom:1.5px dashed rgba(38,108,106,.3);
+  background-size:cover; background-position:center; background-repeat:no-repeat;
+  display:flex; align-items:center; justify-content:center;
+  color:var(--ink-400); font-size:1.8rem; overflow:hidden;
+}
+.course-photo img{ width:100%; height:100%; object-fit:cover; }
+.course-photo.has-image{ border-style:solid; border-color:transparent; color:transparent; font-size:0; }
+.course-body{ padding:1.2rem 1.3rem 1.4rem; }
+.course-body h3{ font-size:1rem; font-weight:700; margin:0 0 .5rem; }
+.course-body p{ font-size:.85rem; color:var(--ink-700); line-height:1.75; margin:0; }
+
 /* ---------- Definition (تعريف عوالم) ---------- */
 .def-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:1.2rem; margin-top:2.8rem; }
 .def-card{ background:#fff; padding:2rem 1.7rem; box-shadow:var(--shadow-soft); border-radius:var(--radius-md); text-align:center; }
